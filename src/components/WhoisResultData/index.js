@@ -52,7 +52,7 @@ const WhoisResultData = ({ result }) => {
                           <tr>
                             <th scope="row">{t("register-date")}</th>
                             <td>
-                              {moment(data.creationDate).format("MM/DD/YYYY")}
+                              {moment(data.creationDate * 1000).format("MM/DD/YYYY")}
                             </td>
                           </tr>
                         )}
@@ -60,7 +60,7 @@ const WhoisResultData = ({ result }) => {
                           <tr>
                             <th scope="row">{t("update-date")}</th>
                             <td>
-                              {moment(data.updatedDate).format("MM/DD/YYYY")}
+                              {moment(data.updatedDate * 1000).format("MM/DD/YYYY")}
                             </td>
                           </tr>
                         )}
@@ -68,7 +68,7 @@ const WhoisResultData = ({ result }) => {
                           <tr>
                             <th scope="row">{t("expiry-date")}</th>
                             <td>
-                              {moment(data.expirationDate).format("MM/DD/YYYY")}
+                              {moment(data.expirationDate * 1000).format("MM/DD/YYYY")}
                             </td>
                           </tr>
                         )}
@@ -76,7 +76,7 @@ const WhoisResultData = ({ result }) => {
                           <tr>
                             <th scope="row">{t("remaining-time")}</th>
                             <td>
-                              {moment(data.expirationDate).diff(
+                              {moment(data.expirationDate * 1000).diff(
                                 moment(),
                                 "days"
                               )}
