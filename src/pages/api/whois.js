@@ -1,4 +1,4 @@
-import API from "caliph-api";
+import whois from "whois-parsed-v2";
 
 const WhoisQuery = async (req, res) => {
   res.statusCode = 200;
@@ -8,14 +8,14 @@ const WhoisQuery = async (req, res) => {
       const results = [];
       await Promise.all(
         req.body.domains.split("\n").map(async (domain) => {
-            const { result } = await API.tools.whois(domain);
-          if (!result.error) {
+          try {
+            const result = await whois.lookup(domain);
             results.push(result);
-          } else if (result.error) {
+          } catch (error) {
             results.push({
               domainName: domain,
               error: true,
-              message: result.error,
+              message: error.message,
             });
           }
         })
