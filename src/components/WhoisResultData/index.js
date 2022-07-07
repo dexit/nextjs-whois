@@ -52,7 +52,7 @@ const WhoisResultData = ({ result }) => {
                           <tr>
                             <th scope="row">{t("register-date")}</th>
                             <td>
-                              moment(new Date(data.creationDate)).format("MM/DD/YYYY")
+                              {moment(new Date(data.creationDate)).format("MM/DD/YYYY")}
                             </td>
                           </tr>
                         )}
@@ -60,7 +60,7 @@ const WhoisResultData = ({ result }) => {
                           <tr>
                             <th scope="row">{t("update-date")}</th>
                             <td>
-                              moment(new Date(data.updatedDate)).format("MM/DD/YYYY")
+                              {moment(new Date(data.updatedDate)).format("MM/DD/YYYY")}
                             </td>
                           </tr>
                         )}
@@ -68,7 +68,7 @@ const WhoisResultData = ({ result }) => {
                           <tr>
                             <th scope="row">{t("expiry-date")}</th>
                             <td>
-                              moment(new Date(data.expirationDate)).format("MM/DD/YYYY")
+                              {moment(new Date(data.expirationDate)).format("MM/DD/YYYY")}
                             </td>
                           </tr>
                         )}
