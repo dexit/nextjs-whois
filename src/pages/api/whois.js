@@ -1,4 +1,4 @@
-import { default: API } from "caliph-api";
+import API from "caliph-api";
 
 const WhoisQuery = async (req, res) => {
   res.statusCode = 200;
