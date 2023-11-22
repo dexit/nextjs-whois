@@ -8,7 +8,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           <Link href="/">
-            <a className="navbar-brand">WHOIS (BETA)</a>
+            <a className="navbar-brand">WHOIS (V2)</a>
           </Link>
           <button
             className="navbar-toggler"
@@ -27,7 +27,7 @@ const Header = () => {
               <li className="nav-item">
                 <a
                   className="nav-link"
-                  href="https://github.com/benfiratkaya/nextjs-whois"
+                  href="https://github.com/caliphdev"
                   target="_blank"
                 >
                   <div className="nav-icon">

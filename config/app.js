@@ -3,7 +3,7 @@ const development = {
 };
 
 const production = {
-  URL: "https://whois.vercel.app",
+  URL: "https://whois-v2.caliph.my.id",
 };
 
 module.exports =

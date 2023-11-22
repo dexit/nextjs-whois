@@ -36,6 +36,7 @@
     "redux-promise-middleware": "^6.1.2",
     "redux-thunk": "^2.3.0",
     "sass": "^1.32.8",
-    "whois-parsed-v2": "^1.0.0"
+    "whois-parsed-v2": "github:caliphdev/whois-parsed-v2",
+    "caliph-api": "latest"
   }
 }
